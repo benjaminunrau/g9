@@ -1,0 +1,55 @@
+<main class="page-shell">
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Inmobiliaria CRM, inicio">
+      <span class="brand-mark" aria-hidden="true">I</span>
+      <span>INMOBILIARIA <strong>CRM</strong></span>
+    </a>
+    <span class="environment-label">Entorno local</span>
+  </header>
+
+  <section class="intro" aria-labelledby="page-title">
+    <p class="eyebrow">PROYECTO ACADÉMICO · FP-UNA 2026</p>
+    <h1 id="page-title">Gestión inmobiliaria, en un solo lugar.</h1>
+    <p class="intro-copy">
+      La base del CRM está preparada. En las siguientes etapas se incorporarán inmuebles,
+      clientes, consultas y acceso por roles.
+    </p>
+  </section>
+
+  <section class="status-card" aria-labelledby="status-title">
+    <div class="status-icon" aria-hidden="true">↔</div>
+    <div class="status-content">
+      <h2 id="status-title">Conexión con la API</h2>
+      @switch (apiConnection()) {
+        @case ('checking') {
+          <p class="status-message" aria-live="polite">Comprobando disponibilidad…</p>
+        }
+        @case ('connected') {
+          <p class="status-message status-message--success" aria-live="polite">
+            API disponible. El backend respondió correctamente.
+          </p>
+        }
+        @case ('unavailable') {
+          <p class="status-message status-message--error" role="status">
+            No se pudo conectar con la API. Iniciá el backend en
+            <code>http://localhost:8080</code> y actualizá esta página.
+          </p>
+        }
+      }
+    </div>
+  </section>
+
+  <section class="next-steps" aria-labelledby="next-steps-title">
+    <div>
+      <p class="eyebrow">PRÓXIMAMENTE</p>
+      <h2 id="next-steps-title">Un flujo de trabajo simple y conectado</h2>
+    </div>
+    <ol>
+      <li><span>01</span> Administrar inmuebles y clientes</li>
+      <li><span>02</span> Registrar consultas vinculadas</li>
+      <li><span>03</span> Proteger el acceso por roles</li>
+    </ol>
+  </section>
+</main>
+
+<router-outlet />

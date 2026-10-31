@@ -37,7 +37,7 @@ The course submission must use **BCrypt**, as required by the assignment. Implem
 
 After the academic project, Argon2id may be adopted as a separate, deliberate migration. At that point, support verification of existing BCrypt hashes and re-encode a user's password with Argon2id after a successful login (or use another explicit migration process). Configure and review Argon2id parameters and any required runtime dependencies before rollout. **Do not switch the graded submission to Argon2id unless the professor explicitly approves it.**
 
-For the detailed requirement mapping and work sequence, see [docs/execution-plan.md](docs/execution-plan.md). For planned verification, see [docs/test-plan.md](docs/test-plan.md). The earlier planning conversation and product exploration are preserved in [docs/planning-notes.md](docs/planning-notes.md).
+For the detailed requirement mapping and work sequence, see [docs/execution-plan.md](docs/execution-plan.md). For planned verification, see [docs/test-plan.md](docs/test-plan.md).
 
 ## Current status
 

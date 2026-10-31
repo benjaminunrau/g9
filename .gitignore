@@ -1,6 +1,10 @@
 .env
 .DS_Store
 *.log
+/AGENTS(old).md
+/READMEidea.md
+/Proyecto_Final_Enunciado_ProgRedes_2026.pdf
+/docs/planning-notes.md
 
 backend/target/
 backend/.classpath
